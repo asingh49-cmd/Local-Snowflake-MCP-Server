@@ -79,8 +79,19 @@ Listening for Claude Desktop connections…
 {
   "mcpServers": {
     "snowflake": {
-      "command": "python",
-      "args": ["path/to/snowflake_mcp_server.py"]
+      "command": "your_env_path",
+      "args": [
+        "your_server_path.py"
+      ],
+      "env": {
+        "SF_ACCOUNT": "account_name",
+        "SF_USER": "username",
+        "SF_PASSWORD": "password",
+        "SF_WH": "warehouse_name",
+        "SF_DB": "database",
+        "SF_SCHEMA": "schema"
+      },
+      "autoStart": true
     }
   }
 }
