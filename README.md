@@ -34,7 +34,7 @@ snowflake-mcp-server/
 │ ├── requirements.txt
 │
 ├── config/
-│ ├── claude_mcp_config.json # placeholder config
+│ ├── claude_desktop_config.json # placeholder config
 │
 ├── docs/
 │ ├── screenshots/
