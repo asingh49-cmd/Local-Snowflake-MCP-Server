@@ -17,7 +17,7 @@ A local **Model Context Protocol (MCP) server** that enables Claude Desktop to i
 This repository contains:
 
 - A **Python MCP server** (`snowflake_mcp_server.py`)  
-- A **Claude MCP configuration file** with placeholders (no secrets)  
+- Instructions/Code in README for the claude_desktop_config.json file
 - **Screenshots and documentation** showing the MCP server running locally  
 - Instructions for connecting Claude → MCP Server → Snowflake securely  
 
@@ -32,9 +32,6 @@ snowflake-mcp-server/
 ├── server/
 │ ├── snowflake_mcp_server.py
 │ ├── requirements.txt
-│
-├── config/
-│ ├── claude_desktop_config.json # placeholder config
 │
 ├── docs/
 │ ├── screenshots/
@@ -73,7 +70,7 @@ Expected output:
 MCP Snowflake Server started...
 Listening for Claude Desktop connections…
 ```
-5. Configure Claude Desktop
+5. Configure Claude Desktop JSON
 ```Add this block to your Claude Desktop config:
 
 {
@@ -88,8 +85,8 @@ Listening for Claude Desktop connections…
         "SF_USER": "username",
         "SF_PASSWORD": "password",
         "SF_WH": "warehouse_name",
-        "SF_DB": "database",
-        "SF_SCHEMA": "schema"
+        "SF_DB": "database_name",
+        "SF_SCHEMA": "schema_name"
       },
       "autoStart": true
     }
